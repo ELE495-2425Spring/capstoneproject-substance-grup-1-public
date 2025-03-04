@@ -35,7 +35,7 @@ Used for detecting and analyzing RF signals to determine the direction of the ta
 [RTL-SDR Overview](https://www.rtl-sdr.com/about-rtl-sdr/)
 
 ### **DC Motors**  
-Drive the wheels of the vehicle for movement.
+4 Motors drive the wheels of the vehicle for movement.
 
 ### **Power Supply**  
 Provides power to the Raspberry Pi, motors, and other components.
@@ -129,7 +129,7 @@ Gyro (X ekseni) kalibrasyonu yapılıyor... Lütfen sensörü hareketsiz tutun. 
 Gyro kalibrasyonu tamamlandı. Offset: -0.0234 °/s
 
 SDR sinyal kalibrasyonu yapılıyor... Lütfen ortam sessiz kalsın. (10 saniye)
-Sinyal kalibrasyonu tamamlandı. Baseline dBm: 45.12 dBm
+Sinyal kalibrasyonu tamamlandı. Baseline dBm: 41.12 dBm
 
 Kalibrasyonlar tamamlandı. Araç 10 saniye bekleyecek...
 ```
@@ -141,18 +141,18 @@ After calibration is complete, the vehicle will start a 360° scan. It will stop
 İterasyon 1: Hedef döndürme: 15.00°
 PID rotasyon tamamlandı: 15.02° (Hedef: 15.00°)
 Güncel açı: 15.02°
-15.00° boyunca ölçülen ortalama dBm: 46.54 dBm
+15.00° boyunca ölçülen ortalama dBm: 41.54 dBm
 
 İterasyon 2: Hedef döndürme: 15.00°
 PID rotasyon tamamlandı: 30.01° (Hedef: 15.00°)
 Güncel açı: 30.01°
-30.00° boyunca ölçülen ortalama dBm: 47.12 dBm
+30.00° boyunca ölçülen ortalama dBm: 42.12 dBm
 
 ```
 #### 6. Monitor Turn to Strongest Signal Direction
 After the 360° scan is complete, the vehicle will turn to the angle with the strongest signal. You can monitor the progress of this turn in the terminal.
 ```
-En yüksek sinyal: 49.87 dBm, Açı: 180.05°
+En yüksek sinyal: 39.87 dBm, Açı: 180.05°
 
 Araç en yüksek sinyalin bulunduğu 180.05° açısına dönüyor...
 PID rotasyon tamamlandı: 180.03° (Hedef: 175.00°)
@@ -161,24 +161,24 @@ PID rotasyon tamamlandı: 180.03° (Hedef: 175.00°)
 After turning to the strongest signal direction, the vehicle will start moving straight. The signal strength will be continuously monitored during movement. You can see the current signal strength in the terminal.
 ```
 Araç düz hareket ediyor...
-Mevcut Sinyal Gücü: 48.23 dB
-Mevcut Sinyal Gücü: 48.56 dB
-Mevcut Sinyal Gücü: 49.12 dB
-48 dB sinyal gücü algılandı! Araç duruyor...
+Mevcut Sinyal Gücü: 45.23 dB
+Mevcut Sinyal Gücü: 45.56 dB
+Mevcut Sinyal Gücü: 47.12 dB
+46 dB sinyal gücü algılandı! Araç duruyor...
 ```
 #### 8. Review Signal Data File
 The signal data obtained during the scan is saved to the signal_data.txt file. You can review this file to see the signal strength at each angle.
 ```
-15.02, 46.54
-30.01, 47.12
-45.03, 47.89
+15.02, 44.54
+30.01, 45.12
+45.03, 45.89
 ...
 9. Stop the Program
 To stop the program, press Ctrl+C in the terminal.
 ```
 #### Additional Notes
 You can modify the PID control parameters and motor PWM values to optimize the vehicle's behavior.
-Adjust the signal strength threshold (48.0 dB) according to the signal source strength and environmental conditions.
+Adjust the signal strength threshold (46.0 dB) according to the signal source strength and environmental conditions.
 Using sudo when running the code is necessary for accessing GPIO pins.
 The scan step (15°) and sampling times can be adjusted based on your application's requirements.
 Including visuals of the hardware setup and connections will make it easier for the user.
