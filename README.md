@@ -44,6 +44,9 @@ Provides power to the Raspberry Pi, motors, and other components.
 ### Project Setup and Execution
 This project creates a signal homing system on a Raspberry Pi using the MPU6050 gyro sensor, RTL-SDR receiver, and L298N motor driver. The project is designed to find the strongest signal at a specific frequency and steer the vehicle in that direction.
 
+![WhatsApp Görsel 2025-03-04 saat 20 48 31_fb0f18e1](https://github.com/user-attachments/assets/a1845dbd-c294-4dc1-babd-b25384cae38c)
+
+
 ### Prerequisites
 Raspberry Pi (Model 3 or higher recommended)
 Raspbian (or Raspberry Pi OS) installed
