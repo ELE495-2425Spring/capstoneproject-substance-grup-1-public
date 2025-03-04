@@ -191,8 +191,9 @@ Using sudo when running the code is necessary for accessing GPIO pins.
 The scan step (15°) and sampling times can be adjusted based on your application's requirements.
 
 ## Screenshots
-Include screenshots of the project in action to give a visual representation of its functionality.
+Here are some screenshots of the project in action to give a visual representation of its functionality.
 ![WhatsApp Görsel 2025-03-04 saat 17 54 19_957e1602](https://github.com/user-attachments/assets/1648fbea-08fc-4193-9cf3-e280c1c7bb3a)
+
 Here you can see the code on the run:https://youtu.be/CCXCw5RzqFc?si=u4j-X_F-LWBFjULp 
 
 ## Acknowledgements
