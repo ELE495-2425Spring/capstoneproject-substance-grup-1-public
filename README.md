@@ -40,6 +40,11 @@ Used for detecting and analyzing RF signals to determine the direction of the ta
 ### **Power Supply**  
 Provides power to the Raspberry Pi, motors, and other components.
 
+### **Yagi Antenna**  
+Specificly designd for 433MHz signal.
+![WhatsApp Görsel 2025-03-04 saat 20 18 01_9a7b3627](https://github.com/user-attachments/assets/56c2e664-893d-43f8-a1b7-cee4644cb22c)
+
+
 ## Installation
 ### Project Setup and Execution
 This project creates a signal homing system on a Raspberry Pi using the MPU6050 gyro sensor, RTL-SDR receiver, and L298N motor driver. The project is designed to find the strongest signal at a specific frequency and steer the vehicle in that direction.
@@ -186,7 +191,9 @@ Using sudo when running the code is necessary for accessing GPIO pins.
 The scan step (15°) and sampling times can be adjusted based on your application's requirements.
 
 ## Screenshots
-Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
+Include screenshots of the project in action to give a visual representation of its functionality.
+![WhatsApp Görsel 2025-03-04 saat 17 54 19_957e1602](https://github.com/user-attachments/assets/1648fbea-08fc-4193-9cf3-e280c1c7bb3a)
+Here you can see the code on the run:https://youtu.be/CCXCw5RzqFc?si=u4j-X_F-LWBFjULp 
 
 ## Acknowledgements
 This project has been inspired and developed through various resources and contributions.
