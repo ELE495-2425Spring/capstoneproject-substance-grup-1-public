@@ -181,7 +181,7 @@ You can modify the PID control parameters and motor PWM values to optimize the v
 Adjust the signal strength threshold (46.0 dB) according to the signal source strength and environmental conditions.
 Using sudo when running the code is necessary for accessing GPIO pins.
 The scan step (15°) and sampling times can be adjusted based on your application's requirements.
-Including visuals of the hardware setup and connections will make it easier for the user.
+
 ## Screenshots
 Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
 
